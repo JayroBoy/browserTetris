@@ -1,0 +1,156 @@
+/*Jayro Boy de Vasconcellos Neto
+nUSP:9762880
+github:@jayroboy
+*/
+
+#container{
+    display: flex;
+    
+}
+
+#containerCabeçalho{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#cabeçalho1{
+    border: double;
+    border-color: #999999;
+    border-width: 5px;
+    display:flex;
+    flex-wrap:wrap;
+    width: 252px;
+}
+
+#cabeçalho2{
+    border: double;
+    border-color: #999999;
+    background-color: #cceeee;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-width: 5px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:25px;
+    width: 96px;
+    font-size: 100%;
+}
+
+#placar{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.placar{
+    background-color: #cceeee;
+    width: 130px;
+    text-align: center;
+}
+
+.grid {
+    width: 260px;
+    height: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cceeee;
+    border-color:#999999;
+    border-width:1px;
+    border-style:solid;
+}
+
+.minigrid {
+    width: 104px;
+    height: 104px;
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cceeee;
+    border-color:#999999;
+    border-width:1px;
+    border-style:solid;
+}
+
+.grid div {
+    width:24px;
+    height: 24px;
+    border-style:solid;
+    border-color:#999999;
+    border-width: 1px;
+}
+
+
+
+.minigrid div{
+    width:24px;
+    height: 24px;
+    border-style:solid;
+    border-color:#999999;
+    border-width: 1px;
+}
+
+
+.peca{
+    border-color: black;
+    border-style:outset !important;
+    border-radius:10%;
+}
+
+.blueRicky{
+    background-color: #0a2c57;
+    /*border-color:black !important;*/
+}
+
+.orangeRicky{
+    background-color: #fc9309;
+    /*border-color:black !important;*/
+}
+
+.teewee{
+    background-color: #83086e;
+    /*border-color:black !important;*/
+}
+
+.rhodeIslandZ{
+    background-color: #e00606;
+    /*border-color:black !important;*/
+}
+
+.clevelandZ{
+    background-color: #11b627;
+    /*border-color:black !important;*/
+}
+
+.smashboy{
+    background-color: #ffef08;
+    /*border-color:black !important;*/
+}
+
+.hero{
+    background-color: #01e7ee;
+    /*border-color:black !important;*/
+}
+
+.bottom{
+    border-color: #999999 white white white!important;
+    background-color: white !important;
+}
+
+.green{
+    background-color: rgb(44, 207, 72);
+}
+
+.red{
+    background-color: rgb(212, 38, 38) !important;
+}
+
+.button {
+    border: none;
+    color: white;
+    width: 48.4%;
+    text-align: center;
+    text-decoration: none;
+    font-style: bold;
+    display: inline-block;
+    font-size: 16px;
+  }
