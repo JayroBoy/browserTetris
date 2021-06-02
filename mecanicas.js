@@ -408,15 +408,15 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(timerId)
         timerId = null
         if(!gameOver) botao.innerHTML = "Continuar"
-        else botao.innerHTML = "Iniciar"
-        botao.classList.remove("red")
+        else{
+            botao.innerHTML = "Iniciar"
+            reset()
+            gameOver = false
+        }botao.classList.remove("red")
     }
 
     //faz o jogo voltar a funcionar
     function unpause(){
-        if(gameOver){
-            reset()
-        }
         desenhar()
         timerId = setInterval(descer, gravidade)
         botao.innerHTML = "Pausar"
