@@ -4,12 +4,44 @@
 
 /*Projeto para candidatura ao FoG - Fellowship of the Game
 Baseado no tutorial do canal freeCodeCamp.org, que pode ser
-acessado no seguinte link:https://www.youtube.com/watch?v=rAUn1Lom6dw
+acessado no seguinte link: https://www.youtube.com/watch?v=rAUn1Lom6dw
 */ 
 
+/** Metas Obrigatórias:
+ * Rotação
+ * Jogo digital
+ * Jogável
+ * 7 tetriminos estruturados
+ * Colisão com o fundo da tela
+ * Colisão com outras peças
+ * Tela retângular
+ * Movimentação direita/esquerda
+ * Eliminação de linhas
+ * GameOver
+*/
+
+/** Metas Opcionais implementadas:
+ *  Score
+ *  Botão de Start/Pause
+ *  Contagem e display de placar
+ *  Previsão de próxima peça
+ *  Possibilidade de reiniciar sem precisar fechar a aplicação 
+*/
+
+/** Coisas que eu implementei que não estavam no tutorial
+ *      Popular o tabuleiro ao início da execução
+ *      Formatação e estilo, tanto das peças como do tabuleiro
+ *      A função de rotação está diferente da que a moça usou, ela não verificava colisao em rotação
+ *      Reiniciar o jogo
+ *      Seleção de dificuldade
+ *      Rotação anti-horária
+ *      Implementei a rotação horária um pouco diferente 
+ */
 
 
-/*---------------------------------- 31/05/21 ---------------------------------*/
+/** Para um breve overview do processo de implementação, 
+ * acessar: https://twitter.com/o_jbIII/status/1399390650152411142
+*/
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -306,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
         apagar()
         posicao += largura
         desenhar()
-        setTimeout(()=>{congelar(), 3*gravidade/4})
+        congelar()
     }
 
 
@@ -432,6 +464,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 removeColor(quadrado)
                 liberar(quadrado)
             }      
+        })
+        quadradosPreview.forEach(quadrado =>{
+            removeColor(quadrado)
         })
         placarValor = 0
         posicao = 4
